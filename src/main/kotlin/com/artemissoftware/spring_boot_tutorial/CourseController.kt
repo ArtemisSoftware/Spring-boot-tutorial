@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class CourseController()
 {
-    private var courses: List<Course> = listOf(
+    private val courses: List<Course> = listOf(
         Course(1, "Learn AWS", "THe guy"),
-        Course(2, "Learn Kotlin", "THe other guy")
+        Course(2, "Learn Kotlin", "THe other guy"),
+        Course(3, "Learn Java", "THe same guy"),
+        Course(4, "Learn C#", "THe same guy")
     )
 
     @RequestMapping("/courses")
